@@ -56,6 +56,7 @@ int main(void) {
             xpc_dictionary_set_int64(msg, "session", session);
             xpc_dictionary_set_uint64(msg, "asn", 1);
 
+            // here is expected one of the xpc_connection_send_message_with_* for this command
             xpc_connection_send_message(conn, msg);
         }
 
