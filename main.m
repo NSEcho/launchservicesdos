@@ -17,7 +17,6 @@ int main(void) {
                 if (xpc_get_type(object) == XPC_TYPE_DICTIONARY) {
                     session = sess;
                 }
-                // printf("here for %d\n", sess);
         });
         xpc_connection_resume(conn);
 
